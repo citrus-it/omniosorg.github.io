@@ -65,7 +65,7 @@ Aarweg 17, 4600 Olten, Switzerland <br/>
 062 775 9902, info@omnios.org<br/>
 <https://www.omnios.org>
 
-The Board of the OmniOS Comunity Edition Association consists of:
+The Board of the OmniOS Community Edition Association consists of:
 
 Tobias Oetiker <tobi@omnios.org>, President<br/>
 Dominik Hassler <hadfl@omnios.org>, Treasurer<br/>
