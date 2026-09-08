@@ -1,10 +1,10 @@
 ---
-title: Setup restricted SFTP
+title: Set up restricted SFTP
 category: makingof
 show_in_sidebar: true
 ---
 
-# Setup Restricted SFTP for download.omniosce.org
+# Set up Restricted SFTP for download.omniosce.org
 
 Convert the cert into ssh authorized_keys compatible format
 

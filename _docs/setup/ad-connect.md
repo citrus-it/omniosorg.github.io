@@ -34,16 +34,16 @@ Install Kerberos support
 # pkg install system/security/kerberos-5
 ```
 
-Setup Kerberos for MS Active Directory (ms_ad)
+Set up Kerberos for MS Active Directory (ms_ad)
 
 ```terminal
-# kclient -T ms_ad          
-# kinit -V administrator         
+# kclient -T ms_ad
+# kinit -V administrator
 ```
 
 ### Enabling SMB Filesharing
 
-To make sure we have the same user id numbers everywhere we want to keep them in Active Direcory. 
+To make sure we have the same user id numbers everywhere we want to keep them in Active Direcory.
 
 ```terminal
 # svccfg -s svc:/system/idmap setprop config/directory_based_mapping=astring: idmu
@@ -53,7 +53,7 @@ To make sure we have the same user id numbers everywhere we want to keep them in
 Make sure you have the following properties configured for every user in your active directory:
 
     * uid (username)
-    * uidNumber 
+    * uidNumber
     * gidNumber
     * homeDirectory
     * loginShell
@@ -69,7 +69,10 @@ Make sure you have the following properties configured for every user in your ac
 
 ### Name Service Integration
 
-The illumos active directory plugin does not support full login integration, therefore we have to setup a proxy ldap user and then configure the ldap client to enable unix logins with ldap accounts. The proxy AD user has to have appropriate rights to read the user account entries.
+The illumos active directory plugin does not support full login integration,
+therefore we have to set up a proxy ldap user and then configure the ldap
+client to enable unix logins with ldap accounts. The proxy AD user has to have
+appropriate rights to read the user account entries.
 
 ![Proxy User Account](./ad-proxy-user.png)
 

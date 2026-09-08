@@ -163,7 +163,7 @@ zonecfg:debian> exit
 
 ## Debian specific
 
-One final note on Debian. The install image does not setup (as of Debian 10) a proper
+One final note on Debian. The install image does not set up (as of Debian 10) a proper
 UEFI boot in the right place for Bhyve to find it, so you'll have to boot into the 
 Debian OS following a few steps from the uefi shell, get the OS up, then copy a file
 in place and run update-grub.

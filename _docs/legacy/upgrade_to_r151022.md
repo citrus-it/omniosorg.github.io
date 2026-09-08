@@ -65,10 +65,10 @@ command:
 It will return output like the following:
 
 ```
-un 1: ffffff0d0c58cd40                                                          
-    un_sys_blocksize = 0x200                                                    
-    un_tgt_blocksize = 0x200                                                    
-    un_phy_blocksize = 0x1000                                                   
+un 1: ffffff0d0c58cd40
+    un_sys_blocksize = 0x200
+    un_tgt_blocksize = 0x200
+    un_phy_blocksize = 0x1000
     un_f_tgt_blocksize_is_valid = 0x1
 ```
 
@@ -148,14 +148,14 @@ inherited from the global zone, and Linux bits should be updated while
 running inside the zone.**
 
 After shutting down the zones gracefully (zlogin <zonename>; shutdown -i5 -g0 -y):
-  
+
 ```
 # /usr/sbin/zoneadm -z <zonename> detach
 ```
 
 It would also be a good idea to take a ZFS snapshot of the zone root in
 case it's needed for rollback (such as if there are issues with the zone
-upgrade.) 
+upgrade.)
 
 ```
 # /usr/sbin/zfs snapshot -r <zoneroot>@<old-release>

@@ -65,7 +65,7 @@ Finally, update as usual.
 
 If you are running OmniOS r14 or later and want to try and 'jump' right to
 the latest OmniOS CE. The following recepie MIGHT work. This is just a bunch
-of steps that have worked for some setups ... 
+of steps that have worked for some setups ...
 
 Are there any zones ? if so ... detach them!
 
@@ -97,7 +97,7 @@ pkg -R /myzone-pool/zones/my-zone-1/root/ update -v -n \
 	`pkg update -nv  --reject pkg://omnios/runtime/python-26 |& grep Reject | sed 's/Reject:/--reject/g'` --be-name r151024
 ```
 
-now re-attach your zones ... 
+now re-attach your zones ...
 
 good luck!
 

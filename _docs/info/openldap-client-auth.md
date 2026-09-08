@@ -12,7 +12,7 @@ This guide is a continuation of the [OpenLDAP Quick Start Guide](/info/openldap.
 
 **Note:** that by default, the `slapd` database grants read access to everybody excepting the super-user (as specified by the `rootdn` configuration directive). It is highly recommended that you establish controls to restrict access to authorized users. Access controls are discussed in the Access Control chapter of the OpenLDAP Administrator's Guide. You are also encouraged to read the [Security Considerations](https://www.openldap.org/doc/admin24/security.html), [Using SASL](https://www.openldap.org/doc/admin24/sasl.html) and [Using TLS](https://www.openldap.org/doc/admin24/tls.html) sections.
 
-## Setup OpenLDAP Client Authentication Server
+## Set up OpenLDAP Client Authentication Server
 
 First, let's do some further configuration on the OpenLDAP server, to allow LDAP Client Authentication.
 
@@ -125,7 +125,7 @@ adding new entry "uid=rigby,ou=user,dc=omnios,dc=org"
 
 This completes the configuration of the OpenLDAP Client Authentication server. OpenLDAP should be running, the DIT is populated, and is now ready to authenticate against clients stored in the DIT.
 
-## Setup Client
+## Set up Client
 
 On a different OmniOS system, I will configure the client. No LDAP software needs to be installed, as OmniOS comes with the **ldapclient(1)** program that takes care of configuration and authentication.
 

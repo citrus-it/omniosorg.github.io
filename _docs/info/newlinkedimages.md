@@ -25,12 +25,12 @@ parent having to do so as well.
 
 ```
 bloody(~)[0]% zoneadm list -cv
-  ID NAME             STATUS     PATH                           BRAND    IP    
+  ID NAME             STATUS     PATH                           BRAND    IP
    0 global           running    /                              ipkg     shared
-   1 lx0              running    /zones/lx0                     lx       excl  
-   2 lx2              running    /zones/lx2                     lx       excl  
-   3 lx1              running    /zones/lx1                     lx       excl  
-   5 lipkg0           running    /zones/lipkg0                  lipkg    excl  
+   1 lx0              running    /zones/lx0                     lx       excl
+   2 lx2              running    /zones/lx2                     lx       excl
+   3 lx1              running    /zones/lx1                     lx       excl
+   5 lipkg0           running    /zones/lipkg0                  lipkg    excl
 bloody(~)[0]% sudo pkg update -nv bash
             Packages to update:        1
      Estimated space available: 27.12 GB
@@ -70,7 +70,7 @@ Linked image 'zone:lipkg0' output:
 |      Estimated space available: 483.84 GB
 | Estimated space to be consumed:  35.15 MB
 |           Rebuild boot archive:        No
-| 
+|
 | Changed packages:
 | omnios
 |   shell/bash

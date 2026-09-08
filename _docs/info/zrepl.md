@@ -90,9 +90,10 @@ storage/zrepl/sink    24K  9.20G    24K  /storage/zrepl/sink
 The above created a parent dataset for zrepl, where further datasets can be created. In this example I also created the dataset `sink` that will be used in this tutorial.
 ### TLS Certificates
 
-We use the TLS client authentication transport to protect our data on the wire. To keep this tutorial focused on ZRepl, I have skipped the setup of certificates. For further information on certificates, please visit the zrepl TLS Transport [documentation](https://zrepl.github.io/configuration/transports.html#transport-tcp-tlsclientauth) and pay special attention to the note regarding **Subject Alternative Names**.
+We use the TLS client authentication transport to protect our data on the wire.
+To keep this tutorial focused on ZRepl, I have skipped the setting up of certificates. For further information on certificates, please visit the zrepl TLS Transport [documentation](https://zrepl.github.io/configuration/transports.html#transport-tcp-tlsclientauth) and pay special attention to the note regarding **Subject Alternative Names**.
 
-### Setup the Master zrepl Instance
+### Set up the Master zrepl Instance
 
 It is a very simple procedure to install and run zrepl on OmniOS providing that you have a zrepl configuration file that suits your requirements. Following, I install zrepl, create a configuration file that suits our needs as discussed above and start and verify the zrepl service.
 
@@ -142,7 +143,7 @@ online         13:13:59 svc:/system/zrepl:default
 
 That takes care of the master zrepl instance!
 
-### Setup the *client* zrepl Instance
+### Set up the *client* zrepl Instance
 
 Follow the same procedure as above for the client, as follows:
 

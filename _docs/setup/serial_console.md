@@ -40,9 +40,9 @@ dedicated ethernet interface I enable SOL only there.
 
 ![Enable the Serial Port](../assets/images/sc-bios2.png)
 
-## Setup the Serial Console in OmniOS
+## Set up the Serial Console in OmniOS
 
-Setup the ttya port
+Set up the ttya port
 
 ```bash
 sttydefs -r ttya
